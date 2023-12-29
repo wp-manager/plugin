@@ -1,0 +1,1 @@
+"# wp-manager-plugin" 
