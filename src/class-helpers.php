@@ -9,7 +9,15 @@ class Helpers{
      * 
      * @return bool
      */
-    public static function permission_callback_admin(){
+    public static function admin_permission_callback(){
         return current_user_can('manage_options');
+    }
+
+    public static function slugify_class_name($name){
+        if(!$name){
+            return false;
+        }
+
+        return str_replace([' ','_'],'-',strtolower($name));
     }
 }

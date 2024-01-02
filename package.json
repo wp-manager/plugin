@@ -1,7 +1,6 @@
 {
   "name": "wp-manager-plugin",
-  "version": "1.0.0",
-  "description": "\"# wp-manager-plugin\"",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "",
   "license": "ISC"

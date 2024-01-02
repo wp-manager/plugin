@@ -1,9 +1,10 @@
 <?php
 /**
- * Plugin Name: WP Manager Core
+ * Plugin Name: WP Manager
  * Plugin URI: https://github.com/mrdarrengriffin/wp-manager-plugin
- * Description: A plugin to provide further core information to WP Manager via the WP REST API
- * Version: 1.0.0
+ * Description: A plugin to provide further REST API routes for WP Manager
+ * Version: 0.0.1
+ * License: GPL v2 or later
  * Requires at least: 6
  * Tested up to: 6.4.2
  * Requires PHP: 7

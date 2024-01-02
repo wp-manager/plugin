@@ -4,15 +4,15 @@ namespace WP_Manager\Core\API;
 
 require_once ABSPATH . 'wp-admin/includes/update.php';
 
-class WP_Core extends API_Controller {
+class WPM_Core_Version extends API_Controller {
 
-    public $resource = 'wp-core';
+    public $resource = 'core-version';
 
     public function register_routes() {
         register_rest_route($this->namespace, '/' . $this->resource, [
             'methods' => 'GET',
             'callback' => [$this, 'get_wp_core_version'],
-            'permission_callback' => [\WP_Manager\Core\Helpers::class, 'permission_callback_admin']
+            'permission_callback' => [\WP_Manager\Core\Helpers::class, 'admin_permission_callback']
         ]);
     }
 
