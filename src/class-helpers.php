@@ -1,6 +1,6 @@
 <?php
 
-namespace WP_Manager\Core;
+namespace WPM\Core;
 
 class Helpers{
 

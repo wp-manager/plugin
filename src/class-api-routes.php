@@ -1,9 +1,9 @@
 <?php
-namespace WP_Manager\Core;
+namespace WPM\Core;
 
 class API_Routes {
 
-    private $routes_dir = 'rest-api';
+    private $routes_dir = 'rest';
 
     /**
      * List of routes to enable
@@ -46,12 +46,12 @@ class API_Routes {
         foreach ($this->enabled_routes as $route) {
 
             // Check to see if the class exists before trying to register the route
-            if (!class_exists('WP_Manager\\Core\\API\\' . $route)) {
+            if (!class_exists('WPM\\Core\\Rest\\' . $route)) {
                 continue;
             }
 
             // Instantiate the class
-            $class = 'WP_Manager\\Core\\API\\' . $route;
+            $class = 'WPM\\Core\\Rest\\' . $route;
             $api = new $class();
 
             $api->register_routes();

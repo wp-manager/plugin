@@ -1,6 +1,6 @@
 <?php
 
-namespace WP_Manager\Core\API;
+namespace WPM\Core\Rest;
 
 abstract class API_Controller {
 
